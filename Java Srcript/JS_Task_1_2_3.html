@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="Feb18.js"></script>
+</head>
+<body>
+    <h1>JS Work</h1>
+    <script>
+        document.write("Hellow World!");
+        console.log("Hello Wordld!");
+    </script>
+    <script>
+        //variable
+        //varc
+        var name = "John";  //re-declaration and re-assignment is possible
+        console.log(name);  //re initailization is possible in js
+
+        var name = "Smith";
+        console.log(name);
+
+        //let
+        let city = "New York"; //re-declaration is not possible but re-assignment
+        console.log(city);
+        //let city = "Delhi"; //error: Identifier 'city' has already been declared
+        city = "Delhi";
+        console.log(city);
+
+        //const
+        const c = 12;
+        console.log(c);
+        //c = 15; //error: Assignment to constant variable.
+
+        const d= 33;
+        console.log("d="+d);
+
+        document.write("<b>I am in internal JS document</b>");
+        console.log("I am in internal JS Session");
+
+        document.write("<br> <br> Value of c is: "+c);
+
+        //error in font size document.write("<br>< <b> style='font-size: 64px'>  I am in internal JS document </style>")
+
+       // error  document.write('<style>body { font-size: 64px; }</style>I am in internal JS document');
+
+    document.write('<span style="font-size: 64px;">I am in internal JS document</span>');
+
+        
+
+    </script>
+
+</body>
+</html>

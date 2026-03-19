@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Sign Up and Sign In</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Welcome to My Website</h1>
+        <p>Project 1: HTML Forms</p>
+    </center>
+    <hr>
+
+    <h2>1. Registration Form</h2>
+    <form action="/submit_registration">
+        <fieldset>
+            <legend><strong>Sign Up Details</strong></legend>
+
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter first name" required>
+            <br><br>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter last name">
+            <br><br>
+
+            <label for="email_reg">Email Address:</label>
+            <input type="email" id="email_reg" name="email" placeholder="example@gmail.com" required>
+            <br><br>
+
+            <label for="pass_reg">Password:</label>
+            <input type="password" id="pass_reg" name="password" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <label>Interests:</label>
+            <input type="checkbox" id="coding" name="interest" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="design" name="interest" value="design">
+            <label for="design">Design</label>
+            <br><br>
+
+            <label for="message_box">Message:</label>
+            <textarea id="message_box" name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+            <br><br>
+
+            <input type="submit" value="Register Now">
+            <input type="reset" value="Clear Form">
+        </fieldset>
+    </form>
+
+    <br>
+    <hr><br>
+
+    <h2>2. Login Form</h2>
+    <form action="/submit_login">
+        <fieldset>
+            <legend><strong>User Login</strong></legend>
+
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <input type="submit" value="Login">
+
+            <br><br>
+            <a href="#">Forgot Password?</a>
+        </fieldset>
+    </form>
+
+    <br><br>
+    <center>
+        <p><i>&copy; 2026 Java Script Project-1 by Abdul Rahman Ali</i></p>
+    </center>
+
+</body>
+
+</html>
