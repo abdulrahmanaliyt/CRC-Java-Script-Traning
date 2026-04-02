@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Even Odd Checker App</h1>
+    <hr>
+    <div>
+        <input type="number" name="number" id="txt1"> 
+        
+        <button onclick="
+        let num = Number(document.getElementById('txt1').value);
+        if (Number.isNaN(num)) {
+            alert('Please enter a valid number');
+            return;
+        }
+        if (num % 2 === 0) {
+            document.getElementById('even').innerHTML += '<br>' + num;
+        } else {
+            document.getElementById('odd').innerHTML += '<br>' + num;
+        }
+        ">Check Even/ Odd</button>
+    </div>
+    <hr>
+
+    
+    <div id="even" style="border: 2px solid red; width: 47%; text-align: center; float: left;">Even No</div>
+    
+    <div id="odd" style="border: 2px solid rgb(14, 18, 231); width: 47%; text-align: center; float: right;">Odd No</div>
+</body>
+</html>
